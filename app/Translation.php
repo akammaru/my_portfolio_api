@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Translation extends Model
 {
@@ -12,6 +12,9 @@ class Translation extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        
+        "label",
+        "category",
+        "translation",
+        "language"
     ];
 }
