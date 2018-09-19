@@ -9,6 +9,6 @@
     {
         public function getAllTranslations(Request $request)
         {
-            return Translation::where('language', $request->language)->all();
+            return Translation::where('language', $request->language)->get();
         }
     }
