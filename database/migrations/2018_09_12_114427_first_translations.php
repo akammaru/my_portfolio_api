@@ -15,7 +15,7 @@ class FirstTranslations extends Migration
     public function up()
     {
         DB::table('translations')->insert([
-            //nederlands
+            //dutch
             ["label" => "dutch", "category" => "language", "translation" => "nederlands", "language" => "nl", "created_at" => Carbon::now(), "updated_at" => Carbon::now() ],
             ["label" => "english", "category" => "language", "translation" => "engels", "language" => "nl", "created_at" => Carbon::now(), "updated_at" => Carbon::now()],
 

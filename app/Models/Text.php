@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Translation extends Model
+class Text extends Model
 {
     use SoftDeletes;
 
     public $timestamps = true;
 
     protected $fillable = [
-        "label",
-        "category",
-        "translation",
-        "language"
+        'key',
+        'component',
+        'language',
+        'text'
     ];
 }
